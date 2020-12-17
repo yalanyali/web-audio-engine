@@ -1,0 +1,71 @@
+{
+  "name": "@web-audio-engine/demo",
+  "description": "sound test",
+  "version": "0.0.0",
+  "cliOptions": {
+    "prepend": "Usage: node demo [options] demo-name",
+    "options": [
+      {
+        "option": "help",
+        "alias": "h",
+        "type": "Boolean",
+        "description": "display help"
+      },
+      {
+        "option": "list",
+        "alias": "l",
+        "type": "Boolean",
+        "description": "display demo name"
+      },
+      {
+        "option": "type",
+        "alias": "t",
+        "type": "String",
+        "description": "File type of audio",
+        "default": "s16"
+      },
+      {
+        "option": "rate",
+        "alias": "r",
+        "type": "Number",
+        "description": "Sample rate of audio",
+        "default": "44100"
+      },
+      {
+        "option": "channels",
+        "alias": "c",
+        "type": "Number",
+        "description": "Number of channels of audio data; e.g. 2 = stereo",
+        "default": "2"
+      },
+      {
+        "option": "duration",
+        "alias": "d",
+        "type": "Number",
+        "description": "Number of duration for rendering"
+      },
+      {
+        "option": "out",
+        "alias": "o",
+        "type": "String",
+        "description": "Write output to <file>"
+      },
+      {
+        "option": "verbose",
+        "alias": "V",
+        "type": "Boolean",
+        "description": "Run in verbose mode",
+        "default": "false"
+      }
+    ],
+    "append": "AUDIO FILE FORMATS: s16 s32 u8 raw cd"
+  },
+  "dependencies": {
+    "optionator": "^0.8.1",
+    "wae-cli": "^0.6.0",
+    "web-audio-scheduler": "^1.1.0"
+  },
+  "license": "MIT",
+  "main": "demo.js",
+  "private": true
+}

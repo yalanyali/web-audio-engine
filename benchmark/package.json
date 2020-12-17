@@ -1,0 +1,11 @@
+{
+  "name": "@web-audio-engine/benchnmark",
+  "description": "benchnmark",
+  "version": "0.0.0",
+  "dependencies": {
+    "benchmark": "^2.1.0"
+  },
+  "license": "MIT",
+  "main": "main.js",
+  "private": true
+}
